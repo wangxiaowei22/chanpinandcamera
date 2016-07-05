@@ -641,8 +641,15 @@ void Widget::on_lineEdit_2_editingFinished()
     if(DC >7)
     {
 
-        emit sendcamersignal();
+
          DC=0;
+         ui->lineEdit_2->setText("6");
+         emit sendcamersignal();
+
+//         QMouseEvent* press=new QMouseEvent(QEvent::MouseButtonPress,QPoint(2,2), Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
+//         QApplication::postEvent(ui->pushButton_2,press);
+//         QMouseEvent* release=new QMouseEvent(QEvent::MouseButtonRelease,QPoint(2,2),Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
+//         QApplication::postEvent(ui->pushButton_2,release);
 
     }
 }
