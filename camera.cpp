@@ -128,7 +128,7 @@ void camera::paintEvent(QPaintEvent *event)
             dialogcountRight = 0;
         switch(dialogcountRight)
         {
-            case 1:pixRightrh.load("./img2/camera.bmp");//14.jpg    ./img2/right.png
+            case 1:pixRightrh.load("./img2/right.png");//14.jpg
             break;
         }
         paintRightrh.drawPixmap(0,0,48,48,pixRightrh);
