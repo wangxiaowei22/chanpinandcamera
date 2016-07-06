@@ -20,53 +20,53 @@ unsigned char tmpflag = 0;
 //
 /********************************************************************************************************************/
 
-unsigned char flagLeft = 0;  //左转
+unsigned char flagLeft = 1;  //左转
 unsigned char countLeft = 0; //左转
 
-unsigned char flagBattery = 0;//电瓶指示灯
+unsigned char flagBattery = 1;//电瓶指示灯
 unsigned char countBattery = 0;//电瓶指示灯
 
-unsigned char flagWidthlamp = 0; //示宽灯
+unsigned char flagWidthlamp = 1; //示宽灯
 unsigned char countWidthlamp = 0;//示宽灯
 
-unsigned char  flagYG = 0; //远光灯
+unsigned char  flagYG = 1; //远光灯
 unsigned char  countYG = 0;//远光灯
 
-unsigned char  flagSW  = 0; //水温
+unsigned char  flagSW  = 1; //水温
 unsigned char  countSW = 0; //水温
 
-unsigned char  flagJG = 0; //近光灯
+unsigned char  flagJG = 1; //近光灯
 unsigned char  countJG = 0; //近光灯
 
 
-unsigned char  flagJY = 0; //机油
+unsigned char  flagJY = 1; //机油
 unsigned char  countJY = 0; //机油
 
-unsigned char  flagLCM = 0; //粮仓满
+unsigned char  flagLCM = 1; //粮仓满
 unsigned char  countLCM = 0; //粮仓满
 
-unsigned char   flagFDJYR = 0; //发动机预热
+unsigned char   flagFDJYR = 1; //发动机预热
 unsigned char   countFDJYR = 0; //发动机预热
 
-unsigned char   flagGL = 0; //过滤
+unsigned char   flagGL = 1; //过滤
 unsigned char   countGL = 0; //过滤
 
-unsigned char   flagYL = 0; //油量
+unsigned char   flagYL = 1; //油量
 unsigned char    countYL = 0;//油量
 
-unsigned char    flagBSQ = 0;//变速器
+unsigned char    flagBSQ = 1;//变速器
 unsigned char    countBSQ = 0;//变速器
 
-unsigned char    flagECU = 0;//ecu
+unsigned char    flagECU = 1;//ecu
 unsigned char    countECU = 0;//ecu
 
-unsigned char    flagPark = 0;//停车
+unsigned char    flagPark = 1;//停车
 unsigned char    countPark = 0; //停车
 
-unsigned char   flagFDJGZ = 0; //发动机故障
+unsigned char   flagFDJGZ = 1; //发动机故障
 unsigned char   countFDJGZ = 0; //发动机故障
 
-unsigned char   flagRight = 0; //右转
+unsigned char   flagRight = 1; //右转
 unsigned char    countRight = 0;//右转
 
 /********************************************************************************************************************/
