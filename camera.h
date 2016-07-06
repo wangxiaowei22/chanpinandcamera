@@ -31,6 +31,8 @@ private slots:
    void on_pushButton_clicked();
    void Daoche();
 
+
+
 private:
     Ui::camera *ui;
     video_thread *video;
@@ -40,6 +42,8 @@ protected:
 
 signals:
     void back();
+
+       void clicked();
 };
 
 #endif // CAMERA_H

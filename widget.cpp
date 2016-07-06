@@ -7,6 +7,7 @@
 #include<QTimer>
 #include<QPainter>
 #include<QDebug>
+#include<QEvent>
 
 int num = 0;
 int numtmp = 0;
@@ -304,13 +305,20 @@ void Widget::paintEvent(QPaintEvent *event)
     if(DC==1)
     {
         tmpflag = 1;
-        emit sendcamersignal();
-        //DC = 0;
+        DC = 0;
+        //emit sendcamersignal();
+
+
+         QMouseEvent* press=new QMouseEvent(QEvent::MouseButtonPress,QPoint(2,2), Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
+         QApplication::postEvent(ui->pushButton_2,press);
+         QMouseEvent* release=new QMouseEvent(QEvent::MouseButtonRelease,QPoint(2,2),Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
+         QApplication::postEvent(ui->pushButton_2,release);
+
     }
 /************************************************************************************************/
 
 
-    if(flagLeft) //闪烁
+    if(flagLeft) //左转灯闪烁
     {
         countLeft++;
         if (countLeft>2)
@@ -650,6 +658,7 @@ void Widget::on_lineEdit_2_editingFinished()
 //         QApplication::postEvent(ui->pushButton_2,press);
 //         QMouseEvent* release=new QMouseEvent(QEvent::MouseButtonRelease,QPoint(2,2),Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
 //         QApplication::postEvent(ui->pushButton_2,release);
+
 
     }
 }
