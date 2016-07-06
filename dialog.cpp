@@ -34,8 +34,46 @@ void Dialog::paintEvent(QPaintEvent *event)
 {
     QPainter dp(this);
     QPixmap dppix;
-    dppix.load("./img2/setup.bmp");
+    dppix.load("./img2/setup2.bmp");
     dp.drawPixmap(0,0,800,600,dppix);
+
+
+    /********************************************************************************************************/
+    //2016.7.6 radiobutton input and output;
+    uchar tmpnum = 1;
+    if (tmpnum)
+    {
+        QPainter point(this);
+        QPixmap pointpix;
+        pointpix.load("./img2/2.png");
+        point.drawPixmap(523,276,14,14,pointpix);
+    }
+
+    uchar tmpnum2 = 1;
+    if (tmpnum2)
+    {
+        QPainter point_out(this);
+        QPixmap pointpix_out;
+        pointpix_out.load("./img2/2.png");
+        point_out.drawPixmap(607,276,14,14,pointpix_out);
+    }
+
+
+
+
+   // uchar tmpnum = 1;
+    if (tmpnum)
+    {
+        //QPainter point(this);
+        //QPixmap pointpix;
+        //pointpix.load("./img2/2.png");
+        //point.drawPixmap(523,276,14,14,pointpix);
+    }
+
+
+
+
+    /********************************************************************************************************/
 }
 
 void Dialog::on_pushButton_2_clicked()
@@ -49,3 +87,8 @@ void Dialog::on_pushButton_3_clicked()
     zl++;
     ui->label->setText(QString::number(zl,10));
 }
+
+
+
+
+

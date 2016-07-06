@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'camera.h'
 **
-** Created: Fri Jul 1 08:49:02 2016
+** Created: Wed Jul 6 17:14:13 2016
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,30 +23,32 @@ static const uint qt_meta_data_camera[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       2,       // signalCount
 
  // signals: signature, parameters, type, tag, flags
        8,    7,    7,    7, 0x05,
+      15,    7,    7,    7, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      19,   15,    7,    7, 0x0a,
-      40,    7,    7,    7, 0x0a,
-      55,    7,    7,    7, 0x0a,
-      69,    7,    7,    7, 0x08,
-      93,    7,    7,    7, 0x08,
+      29,   25,    7,    7, 0x0a,
+      50,    7,    7,    7, 0x0a,
+      65,    7,    7,    7, 0x0a,
+      79,    7,    7,    7, 0x08,
+     103,    7,    7,    7, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_camera[] = {
-    "camera\0\0back()\0img\0show_picture(QImage)\0"
-    "start_thread()\0stop_thread()\0"
-    "on_pushButton_clicked()\0Daoche()\0"
+    "camera\0\0back()\0clicked()\0img\0"
+    "show_picture(QImage)\0start_thread()\0"
+    "stop_thread()\0on_pushButton_clicked()\0"
+    "Daoche()\0"
 };
 
 void camera::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -56,11 +58,12 @@ void camera::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         camera *_t = static_cast<camera *>(_o);
         switch (_id) {
         case 0: _t->back(); break;
-        case 1: _t->show_picture((*reinterpret_cast< const QImage(*)>(_a[1]))); break;
-        case 2: _t->start_thread(); break;
-        case 3: _t->stop_thread(); break;
-        case 4: _t->on_pushButton_clicked(); break;
-        case 5: _t->Daoche(); break;
+        case 1: _t->clicked(); break;
+        case 2: _t->show_picture((*reinterpret_cast< const QImage(*)>(_a[1]))); break;
+        case 3: _t->start_thread(); break;
+        case 4: _t->stop_thread(); break;
+        case 5: _t->on_pushButton_clicked(); break;
+        case 6: _t->Daoche(); break;
         default: ;
         }
     }
@@ -98,9 +101,9 @@ int camera::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 7;
     }
     return _id;
 }
@@ -109,5 +112,11 @@ int camera::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void camera::back()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+
+// SIGNAL 1
+void camera::clicked()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, 0);
 }
 QT_END_MOC_NAMESPACE

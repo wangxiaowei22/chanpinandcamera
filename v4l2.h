@@ -17,7 +17,7 @@
 #else
 #define LOG printf
 #endif
-#define CAMERA_DEVICE "/dev/video1"
+#define CAMERA_DEVICE "/dev/video0"
 #define CAPTURE_FILE "frame.jpeg"
 #define VIDEO_WIDTH 640
 #define VIDEO_HEIGHT 480
