@@ -29,38 +29,38 @@ unsigned char countBattery = 0;//电瓶指示灯
 unsigned char flagWidthlamp = 1; //示宽灯
 unsigned char countWidthlamp = 0;//示宽灯
 
-unsigned char  flagYG = 1; //远光灯
+unsigned char  flagYG = 0; //远光灯
 unsigned char  countYG = 0;//远光灯
 
-unsigned char  flagSW  = 1; //水温
+unsigned char  flagSW  = 0; //水温
 unsigned char  countSW = 0; //水温
 
-unsigned char  flagJG = 1; //近光灯
+unsigned char  flagJG = 0; //近光灯
 unsigned char  countJG = 0; //近光灯
 
 
-unsigned char  flagJY = 1; //机油
+unsigned char  flagJY = 0; //机油
 unsigned char  countJY = 0; //机油
 
-unsigned char  flagLCM = 1; //粮仓满
+unsigned char  flagLCM = 0; //粮仓满
 unsigned char  countLCM = 0; //粮仓满
 
-unsigned char   flagFDJYR = 1; //发动机预热
+unsigned char   flagFDJYR = 0; //发动机预热
 unsigned char   countFDJYR = 0; //发动机预热
 
-unsigned char   flagGL = 1; //过滤
+unsigned char   flagGL = 0; //过滤
 unsigned char   countGL = 0; //过滤
 
-unsigned char   flagYL = 1; //油量
+unsigned char   flagYL = 0; //油量
 unsigned char    countYL = 0;//油量
 
-unsigned char    flagBSQ = 1;//变速器
+unsigned char    flagBSQ = 0;//变速器
 unsigned char    countBSQ = 0;//变速器
 
-unsigned char    flagECU = 1;//ecu
+unsigned char    flagECU = 0;//ecu
 unsigned char    countECU = 0;//ecu
 
-unsigned char    flagPark = 1;//停车
+unsigned char    flagPark = 0;//停车
 unsigned char    countPark = 0; //停车
 
 unsigned char   flagFDJGZ = 1; //发动机故障
@@ -513,7 +513,7 @@ void Widget::paintEvent(QPaintEvent *event)
             break;
         }
         paintBSQ.drawPixmap(523,0,43,43,pixBSQ);
-
+    }
         //ecu
         QPainter paintECU(this);
         QPixmap pixECU;
@@ -587,14 +587,6 @@ void Widget::paintEvent(QPaintEvent *event)
         /*仪表值   2016.6.22                                                                    */
         /***************************************************************************************/
         //ui->label->setText(QString::number(KL,10));//QString::number()
-
-
-
-
-
-    }
-
-
 
 }
 
