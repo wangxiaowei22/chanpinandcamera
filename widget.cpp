@@ -16,17 +16,17 @@ int numtmp = 0;
 unsigned char tmpflag = 0;
 /********************************************************************************************************************/
 //2016 6.1  wushengjun
-//定义变量
+//定义变量 控制图标闪烁。
 //
 /********************************************************************************************************************/
 
-unsigned char flagLeft = 1;  //左转
+unsigned char flagLeft = 0;  //左转
 unsigned char countLeft = 0; //左转
 
-unsigned char flagBattery = 1;//电瓶指示灯
+unsigned char flagBattery = 0;//电瓶指示灯
 unsigned char countBattery = 0;//电瓶指示灯
 
-unsigned char flagWidthlamp = 1; //示宽灯
+unsigned char flagWidthlamp = 0; //示宽灯
 unsigned char countWidthlamp = 0;//示宽灯
 
 unsigned char  flagYG = 0; //远光灯
@@ -63,7 +63,7 @@ unsigned char    countECU = 0;//ecu
 unsigned char    flagPark = 0;//停车
 unsigned char    countPark = 0; //停车
 
-unsigned char   flagFDJGZ = 1; //发动机故障
+unsigned char   flagFDJGZ = 0; //发动机故障
 unsigned char   countFDJGZ = 0; //发动机故障
 
 unsigned char   flagRight = 1; //右转

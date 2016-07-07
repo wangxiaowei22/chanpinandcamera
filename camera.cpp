@@ -16,13 +16,6 @@ extern unsigned char tmpflag;
 extern unsigned char KL;
 extern unsigned char SK;
 
-//unsigned char   dialogflagRight = 1; //右转
-//unsigned char   dialogcountRight = 0;//右转
-
-
-
-
-
 
 
 /********************************************************************************************************************/
@@ -122,8 +115,8 @@ camera::camera(QWidget *parent) :
 
     /*****************************************************************************/
     //2016.6.30
-        connect(ui->pushButton,SIGNAL(clicked()),this,SLOT(on_pushButton_clicked()));
-        secondtime->start(1000);
+    connect(ui->pushButton,SIGNAL(clicked()),this,SLOT(on_pushButton_clicked()));
+    secondtime->start(1000);
     /*****************************************************************************/
 
 }
@@ -183,47 +176,6 @@ void camera::paintEvent(QPaintEvent *event)
         QMouseEvent* release=new QMouseEvent(QEvent::MouseButtonRelease,QPoint(2,2),Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
         QApplication::postEvent(ui->pushButton,release);
     }
-
-
-
-//    //flagRight = 1; //右转
-//    QPainter paintRightrh(this);
-//    QPixmap pixRightrh;
-//    if(dialogflagRight)
-//    {
-//        dialogcountRight++;
-//        if (dialogcountRight>2)
-//            dialogcountRight = 0;
-//        switch(dialogcountRight)
-//        {
-//            case 1:pixRightrh.load("./img2/right.png");//14.jpg
-//            break;
-//        }
-//        paintRightrh.drawPixmap(0,0,48,48,pixRightrh);
-//    }
-
-
-    /************************************************************************************************/
-    //2016.6.25  定义数值
-
-//        ui->label->setText(QString::number(KL));
-//        ui->label_2->setText(QString::number(SuiWen));
-//        ui->label_3->setText(QString::number(Youya));
-
-//        if(DC==1)
-//        {
-//            tmpflag = 1;
-//            DC = 0;
-//            //emit sendcamersignal();
-
-
-//             QMouseEvent* press=new QMouseEvent(QEvent::MouseButtonPress,QPoint(2,2), Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
-//             QApplication::postEvent(ui->pushButton_2,press);
-//             QMouseEvent* release=new QMouseEvent(QEvent::MouseButtonRelease,QPoint(2,2),Qt::LeftButton,Qt::LeftButton,Qt::NoModifier);
-//             QApplication::postEvent(ui->pushButton_2,release);
-
-//        }
-    /************************************************************************************************/
 
 
         //加载上方图标 闪烁用到
@@ -426,7 +378,7 @@ void camera::paintEvent(QPaintEvent *event)
                 break;
             }
             paintBSQ.drawPixmap(523,0,43,43,pixBSQ);
-
+        }
             //ecu
             QPainter paintECU(this);
             QPixmap pixECU;
@@ -494,8 +446,6 @@ void camera::paintEvent(QPaintEvent *event)
                 }
                 paintRight.drawPixmap(752,0,48,48,pixRight);
             }
-
-        }
 }
 
 
